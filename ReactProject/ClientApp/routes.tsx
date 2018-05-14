@@ -4,7 +4,8 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
-import { Headings } from './components/Headings';
+import { RecentTableChanges } from './components/Headings';
+import { StateAppV1 } from './components/StateApp';
 var data = [{
     "when": "2 minutes ago",
     "who": "Jill Dupre",
@@ -19,7 +20,8 @@ var data = [{
     "when": "2 hours ago",
     "who": "Jordan Whash",
     "description": "Created new account"
-}];
+    }];
+var props2 = {headings : ["Last updated at", "By Author", "Summary"], title : "Recent Changes", data: data}
 var headings = ["Last updated at", "By Author", "Summary"]
 var title = "Recent Changes";
 export const routes = <Layout>
@@ -27,8 +29,17 @@ export const routes = <Layout>
     <Route path='/counter' component={ Counter } />
     <Route path='/fetchdata' component={FetchData} />
     <Route path='/rowdata' component={FetchData} />
+    {/*<Route
+        path='/headings'
+        render={(props) => <RecentTableChanges.Headings headings={headings} data={data} title={title} />}
+    />*/}
     <Route
         path='/headings'
-        render={(props) => <Headings headings={headings} data={data} title={title} />}
+        render={() => <RecentTableChanges.Headings {...props2} />}
     />
+    <Route
+        path='/headingsV2'
+        render={() => <RecentTableChanges.AppRecentTable {...props2} />}
+    />
+    <Route path='/stateapp' render={() => <StateAppV1.StateApp />} />
 </Layout>;

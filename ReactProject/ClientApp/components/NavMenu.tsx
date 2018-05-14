@@ -3,10 +3,17 @@ import { Link, NavLink } from 'react-router-dom';
 
 export class NavMenu extends React.Component<{}, {}> {
     public render() {
-        var routes = [{ to: '/', title: 'Home' }, { to: '/counter', title: 'Counter' }, { to: '/fetchdata', title: 'Fetch data' }, { to: '/rowdata', title: 'Row Data' }, { to: "/headings", title: "Headings"}];
-        var rows = routes.map((route) => {
+        var routes = [{ to: '/', title: 'Home' },
+            { to: '/counter', title: 'Counter' },
+            { to: '/fetchdata', title: 'Fetch data' },
+            { to: '/rowdata', title: 'Row Data' },
+            { to: "/headings", title: "Headings" },
+            { to: '/headingsV2', title: "HeadingsV2" }
+            ,
+            { to: '/stateapp', title: "StateApp" }];
+        var rows = routes.map((route,index) => {
             return <li>
-                <NavLink to={route.to} activeClassName='active'>
+                <NavLink to={route.to} activeClassName='active' key={index}>
                     <span className='glyphicon glyphicon-th-list'></span> {route.title}
                             </NavLink>
             </li>

@@ -22,10 +22,12 @@
 
   <ItemGroup>
     <None Remove="ClientApp\components\Headings.tsx" />
+    <None Remove="ClientApp\components\StateApp.tsx" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\components\Headings.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\StateApp.tsx" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
