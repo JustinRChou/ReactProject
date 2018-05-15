@@ -6,6 +6,7 @@ import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { RecentTableChanges } from './components/Headings';
 import { StateAppV1 } from './components/StateApp';
+import  Container  from './components/DragList/Container';
 var data = [{
     "when": "2 minutes ago",
     "who": "Jill Dupre",
@@ -42,4 +43,6 @@ export const routes = <Layout>
         render={() => <RecentTableChanges.AppRecentTable {...props2} />}
     />
     <Route path='/stateapp' render={() => <StateAppV1.StateApp />} />
+    <Route path='/Home/NewPage' />
+    <Route path='/container' component={Container} />
 </Layout>;

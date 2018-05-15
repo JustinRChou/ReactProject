@@ -21,11 +21,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\DragList\Box.tsx" />
+    <None Remove="ClientApp\components\DragList\Container.tsx" />
+    <None Remove="ClientApp\components\DragList\Dustbin.tsx" />
+    <None Remove="ClientApp\components\DragList\ItemTypes.tsx" />
     <None Remove="ClientApp\components\Headings.tsx" />
     <None Remove="ClientApp\components\StateApp.tsx" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\DragList\Box.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\DragList\Container.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\DragList\Dustbin.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\DragList\ItemTypes.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Headings.tsx" />
     <TypeScriptCompile Include="ClientApp\components\StateApp.tsx" />
   </ItemGroup>

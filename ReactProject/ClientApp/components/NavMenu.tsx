@@ -10,7 +10,9 @@ export class NavMenu extends React.Component<{}, {}> {
             { to: "/headings", title: "Headings" },
             { to: '/headingsV2', title: "HeadingsV2" }
             ,
-            { to: '/stateapp', title: "StateApp" }];
+            { to: '/stateapp', title: "StateApp" }
+            , { to: '/container', title: "containerto"},
+            { to: '/Home/NewPage', title: "New Page" }];
         var rows = routes.map((route,index) => {
             return <li>
                 <NavLink to={route.to} activeClassName='active' key={index}>
