@@ -26,6 +26,7 @@ var data = [{
     }];
 var props2 = {headings : ["Last updated at", "By Author", "Summary"], title : "Recent Changes", data: data}
 var headings = ["Last updated at", "By Author", "Summary"]
+var headingsV2 = ['Updated at ', 'Author', 'Change'];
 var title = "Recent Changes";
 export const routes = <Layout>
     <Route exact path='/' component={ Home } />
@@ -48,5 +49,5 @@ export const routes = <Layout>
     <Route path='/Home/NewPage' />
     <Route path='/container' render={() => <Container />} />
     <Route path='/comlifecycle' render={() => <ComponentModelLifecycleApp name="Jane" />} />
-    <Route path='/openlibrecent' render={() => <OpenLibRecentChangesApp name="Jane" />} />
+    <Route path='/openlibrecent' render={() => <OpenLibRecentChangesApp headings={headingsV2} />} />
 </Layout>;
