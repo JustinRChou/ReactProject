@@ -6,7 +6,9 @@ import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { RecentTableChanges } from './components/Headings';
 import { StateAppV1 } from './components/StateApp';
-import  Container  from './components/DragList/Container';
+import Container, { DoubleContainer } from './components/DragList/Container';
+import ComponentModelLifecycleApp from './components/ComponentLifeCycle'
+import OpenLibRecentChangesApp from './components/OpenLibRecentChanges';
 var data = [{
     "when": "2 minutes ago",
     "who": "Jill Dupre",
@@ -44,5 +46,7 @@ export const routes = <Layout>
     />
     <Route path='/stateapp' render={() => <StateAppV1.StateApp />} />
     <Route path='/Home/NewPage' />
-    <Route path='/container' component={Container} />
+    <Route path='/container' render={() => <Container />} />
+    <Route path='/comlifecycle' render={() => <ComponentModelLifecycleApp name="Jane" />} />
+    <Route path='/openlibrecent' render={() => <OpenLibRecentChangesApp name="Jane" />} />
 </Layout>;

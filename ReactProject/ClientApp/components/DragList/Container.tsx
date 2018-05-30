@@ -22,3 +22,14 @@ export default class Container extends React.Component<any, any> {
         )
     }
 }
+export class DoubleContainer extends React.Component<any, any> {
+    render() {
+        return (
+            <div>
+                <Container />
+                <hr />
+                <Container />
+                </div>
+        )
+    }
+}

@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="jQuery.TimeAgo" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
   </ItemGroup>
 
@@ -21,15 +22,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\ComponentLifeCycle.tsx" />
     <None Remove="ClientApp\components\DragList\Box.tsx" />
     <None Remove="ClientApp\components\DragList\Container.tsx" />
     <None Remove="ClientApp\components\DragList\Dustbin.tsx" />
     <None Remove="ClientApp\components\DragList\ItemTypes.tsx" />
     <None Remove="ClientApp\components\Headings.tsx" />
+    <None Remove="ClientApp\components\OpenLibRecentChanges.tsx" />
     <None Remove="ClientApp\components\StateApp.tsx" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\OpenLibRecentChanges.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\ComponentLifeCycle.tsx" />
     <TypeScriptCompile Include="ClientApp\components\DragList\Box.tsx" />
     <TypeScriptCompile Include="ClientApp\components\DragList\Container.tsx" />
     <TypeScriptCompile Include="ClientApp\components\DragList\Dustbin.tsx" />
