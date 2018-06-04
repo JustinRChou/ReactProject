@@ -11,6 +11,7 @@ import ComponentModelLifecycleApp from './components/ComponentLifeCycle'
 import OpenLibRecentChangesApp from './components/OpenLibRecentChanges';
 import FormInputApp from './components/FormInput';
 import BookstoreApp from './components/Bookstore';
+import SearchPageApp from './components/OpenLibSearch/SearchPageApp';
 var data = [{
     "when": "2 minutes ago",
     "who": "Jill Dupre",
@@ -54,4 +55,5 @@ export const routes = <Layout>
     <Route path='/openlibrecent' render={() => <OpenLibRecentChangesApp headings={headingsV2} />} />
     <Route path='/forminput' render={() => <FormInputApp />} />
     <Route path='/bookstore' render={() => <BookstoreApp />} />
+    <Route path='/searchpage' render={() => <SearchPageApp />} />
 </Layout>;

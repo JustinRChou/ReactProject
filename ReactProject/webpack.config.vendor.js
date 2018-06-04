@@ -18,7 +18,7 @@ module.exports = (env) => {
             ]
         },
         entry: {
-            vendor: ['bootstrap', 'bootstrap/dist/css/bootstrap.css', 'event-source-polyfill', 'isomorphic-fetch', 'react', 'react-dom', 'react-router-dom', 'jquery','jquery.timeago'],
+            vendor: ['bootstrap', 'bootstrap/dist/css/bootstrap.css', 'font-awesome/css/font-awesome.css', 'event-source-polyfill', 'isomorphic-fetch', 'react', 'react-dom', 'react-router-dom', 'jquery','timeago'],
         },
         output: {
             path: path.join(__dirname, 'wwwroot', 'dist'),
@@ -36,7 +36,7 @@ module.exports = (env) => {
             new HtmlWebpackExternalsPlugin({
                 externals: [
                     {
-                        module: 'jquery.timeago',
+                        module: 'timeago',
                         entry: 'jquery.timeago.js',
                         global: 'jQuery',
                     },

@@ -4,19 +4,20 @@ import { Link, NavLink } from 'react-router-dom';
 export class NavMenu extends React.Component<{}, {}> {
     public render() {
         var routes = [{ to: '/', title: 'Home' },
-            { to: '/counter', title: 'Counter' },
-            { to: '/fetchdata', title: 'Fetch data' },
-            { to: '/rowdata', title: 'Row Data' },
-            { to: "/headings", title: "Headings" },
-            { to: '/headingsV2', title: "HeadingsV2" }
+        { to: '/counter', title: 'Counter' },
+        { to: '/fetchdata', title: 'Fetch data' },
+        { to: '/rowdata', title: 'Row Data' },
+        { to: "/headings", title: "Headings" },
+        { to: '/headingsV2', title: "HeadingsV2" }
             ,
-            { to: '/stateapp', title: "StateApp" }
-            , { to: '/container', title: "containerto"},
-            { to: '/Home/NewPage', title: "New Page" },
-            { to: '/comlifecycle', title: "Component Life Cycle" },
-            { to: "/openlibrecent", title: "Open Lib Recent" },
-            { to: "/forminput", title: "Form Input" },
-            { to: "/bookstore", title: "Bookstore" }];
+        { to: '/stateapp', title: "StateApp" }
+            , { to: '/container', title: "containerto" },
+        { to: '/Home/NewPage', title: "New Page" },
+        { to: '/comlifecycle', title: "Component Life Cycle" },
+        { to: "/openlibrecent", title: "Open Lib Recent" },
+        { to: "/forminput", title: "Form Input" },
+        { to: "/bookstore", title: "Bookstore" }, {
+            to: "/searchpage", title: "Search Books"}];
         var rows = routes.map((route,index) => {
             return <li>
                 <NavLink to={route.to} activeClassName='active' key={index}>

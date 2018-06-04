@@ -31,6 +31,8 @@
     <None Remove="ClientApp\components\FormInput.tsx" />
     <None Remove="ClientApp\components\Headings.tsx" />
     <None Remove="ClientApp\components\OpenLibRecentChanges.tsx" />
+    <None Remove="ClientApp\components\OpenLibSearch\SearchPageApp.tsx" />
+    <None Remove="ClientApp\components\OpenLibSearch\SearchPageComponent.tsx" />
     <None Remove="ClientApp\components\StateApp.tsx" />
   </ItemGroup>
 
@@ -44,6 +46,8 @@
     <TypeScriptCompile Include="ClientApp\components\DragList\Dustbin.tsx" />
     <TypeScriptCompile Include="ClientApp\components\DragList\ItemTypes.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Headings.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\OpenLibSearch\SearchPageApp.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\OpenLibSearch\SearchPageComponent.tsx" />
     <TypeScriptCompile Include="ClientApp\components\StateApp.tsx" />
   </ItemGroup>
 

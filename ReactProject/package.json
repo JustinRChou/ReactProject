@@ -12,6 +12,7 @@
     "timeago": "1.6.3"
   },
   "devDependencies": {
+    "font-awesome": "4.7.0",
     "@types/jquery.timeago": "1.0.29",
     "@types/jquery": "3.3.2",
     "@types/history": "4.6.0",
