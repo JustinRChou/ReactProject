@@ -22,17 +22,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\Bookstore.tsx" />
     <None Remove="ClientApp\components\ComponentLifeCycle.tsx" />
     <None Remove="ClientApp\components\DragList\Box.tsx" />
     <None Remove="ClientApp\components\DragList\Container.tsx" />
     <None Remove="ClientApp\components\DragList\Dustbin.tsx" />
     <None Remove="ClientApp\components\DragList\ItemTypes.tsx" />
+    <None Remove="ClientApp\components\FormInput.tsx" />
     <None Remove="ClientApp\components\Headings.tsx" />
     <None Remove="ClientApp\components\OpenLibRecentChanges.tsx" />
     <None Remove="ClientApp\components\StateApp.tsx" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\Bookstore.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\FormInput.tsx" />
     <TypeScriptCompile Include="ClientApp\components\OpenLibRecentChanges.tsx" />
     <TypeScriptCompile Include="ClientApp\components\ComponentLifeCycle.tsx" />
     <TypeScriptCompile Include="ClientApp\components\DragList\Box.tsx" />

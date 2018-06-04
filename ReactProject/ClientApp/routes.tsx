@@ -9,6 +9,8 @@ import { StateAppV1 } from './components/StateApp';
 import Container, { DoubleContainer } from './components/DragList/Container';
 import ComponentModelLifecycleApp from './components/ComponentLifeCycle'
 import OpenLibRecentChangesApp from './components/OpenLibRecentChanges';
+import FormInputApp from './components/FormInput';
+import BookstoreApp from './components/Bookstore';
 var data = [{
     "when": "2 minutes ago",
     "who": "Jill Dupre",
@@ -50,4 +52,6 @@ export const routes = <Layout>
     <Route path='/container' render={() => <Container />} />
     <Route path='/comlifecycle' render={() => <ComponentModelLifecycleApp name="Jane" />} />
     <Route path='/openlibrecent' render={() => <OpenLibRecentChangesApp headings={headingsV2} />} />
+    <Route path='/forminput' render={() => <FormInputApp />} />
+    <Route path='/bookstore' render={() => <BookstoreApp />} />
 </Layout>;
